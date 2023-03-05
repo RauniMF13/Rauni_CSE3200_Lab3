@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lab 2</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="greeting">Take a Geography Quiz</string>
+    <string name="correct_toast">Correct!</string>
+    <string name="incorrect_toast">Incorrect.</string>
+    <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
+    <string name="question_australia">Canberra is the capital of Australia.</string>
+    <string name="question_oceans">The Pacific Ocean is larger than the Atlantic Ocean.</string>
+    <string name="question_africa">The source of the Nile River is in Egypt.</string>
+    <string name="question_americas">The Amazon River is the longest river in the Americas.</string>
+    <string name="question_mideast">The Sues Canal connects the Red Sea and the Indian Ocean.</string>
+    <string name="question_asia">Lake Baikal is the world\'s oldest and deepest freshwater lake.</string>
+    <string name="launch">Start</string>
+    <string name="score_zero">Score: 0</string>
+    <string name="score_one">Score: 1</string>
+    <string name="score_two">Score: 2</string>
+    <string name="score_three">Score: 3</string>
+    <string name="score_four">Score: 4</string>
+    <string name="score_five">Score: 5</string>
+    <string name="score_six">Score: 6</string>
+    <string name="done">Submit</string>
+    <string name="restart_button">Restart</string>
+    <string name="complete_text">You finished the quiz! How\'d you do?</string>
+</resources>

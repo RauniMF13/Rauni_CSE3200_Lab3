@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashPageFragment">
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.cse3200.lab2.DoneFragment"
+        android:label="DoneFragment"
+        tools:layout="@layout/fragment_done_page">
+        <action
+            android:id="@+id/restart"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.cse3200.lab2.QuizFragment"
+        android:label="QuizFragment"
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/submit"
+            app:destination="@id/doneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashPageFragment"
+        android:name="com.cse3200.lab2.SplashPageFragment"
+        android:label="fragment_splash_page"
+        tools:layout="@layout/fragment_splash_page" >
+        <action
+            android:id="@+id/start"
+            app:destination="@id/quizFragment" />
+    </fragment>
+</navigation>

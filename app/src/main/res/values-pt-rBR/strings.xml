@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab 2</string>
+    <string name="true_button">Verdadeiro</string>
+    <string name="false_button">Falso</string>
+    <string name="greeting">Fazer um Teste de Geografia</string>
+    <string name="correct_toast">Correto!</string>
+    <string name="incorrect_toast">Incorreto.</string>
+    <string name="next_button">Próximo</string>
+    <string name="prev_button">Anterior</string>
+    <string name="question_australia">Canberra é a capital da Austrália</string>
+    <string name="question_oceans">O Oceano Pacífico é maior que o Oceano Atlântico.</string>
+    <string name="question_africa">A nascente do rio Nilo fica no Egito.</string>
+    <string name="question_americas">O rio Amazonas é o maior rio das Américas.</string>
+    <string name="question_mideast">O Canal Sues conecta o Mar Vermelho e o Oceano Índico.</string>
+    <string name="question_asia">O Lago Baikal é o lago de água doce mais antigo e profundo do mundo.</string>
+    <string name="launch">Inicializar</string>
+    <string name="score_zero">Pontos: 0</string>
+    <string name="score_one">Pontos: 1</string>
+    <string name="score_two">Pontos: 2</string>
+    <string name="score_three">Pontos: 3</string>
+    <string name="score_four">Pontos: 4</string>
+    <string name="score_five">Pontos: 5</string>
+    <string name="score_six">Pontos: 6</string>
+    <string name="done">Terminar</string>
+    <string name="restart_button">Reiniciar</string>
+    <string name="complete_text">Terminou o questionario! Como se saiu?</string>
+</resources>
