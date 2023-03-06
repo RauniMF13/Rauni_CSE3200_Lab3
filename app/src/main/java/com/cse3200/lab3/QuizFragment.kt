@@ -1,15 +1,13 @@
-package com.cse3200.lab2
+package com.cse3200.lab3
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.cse3200.lab2.databinding.FragmentQuizBinding
+import com.cse3200.lab3.databinding.FragmentQuizBinding
 
 class QuizFragment : Fragment() {
     private var _binding: FragmentQuizBinding? = null
@@ -64,12 +62,12 @@ class QuizFragment : Fragment() {
     }
 
     private val questionBank = listOf(
-        Question(R.string.question_australia, answer = true, firstGuess = true),
-        Question(R.string.question_oceans, answer = true, firstGuess = true),
-        Question(R.string.question_mideast, answer = false, firstGuess = true),
-        Question(R.string.question_africa, answer = false, firstGuess = true),
-        Question(R.string.question_americas, answer = true, firstGuess = true),
-        Question(R.string.question_asia, answer = true, firstGuess = true)
+        Question(R.string.question_australia, answer = true, firstGuess = true, R.drawable.canberra_stock),
+        Question(R.string.question_oceans, answer = true, firstGuess = true, R.drawable.pacific_ocean),
+        Question(R.string.question_mideast, answer = false, firstGuess = true, R.drawable.suez_canal),
+        Question(R.string.question_africa, answer = false, firstGuess = true, R.drawable.nile_river),
+        Question(R.string.question_americas, answer = true, firstGuess = true, R.drawable.amazon_river),
+        Question(R.string.question_asia, answer = true, firstGuess = true, R.drawable.baikal_stock)
     )
 
     private val scoreTexts = listOf(
@@ -88,7 +86,9 @@ class QuizFragment : Fragment() {
 
     private fun updateQuestion() {
         val questionTextResId = questionBank[currentIndex].textResId
+        val questionPicResId = questionBank[currentIndex].imageResId
         binding.textView2.setText(questionTextResId)
+        binding.questionPicture.setImageResource(questionPicResId)
         binding.scoreText.setText(scoreTexts[score.curScore])
     }
 

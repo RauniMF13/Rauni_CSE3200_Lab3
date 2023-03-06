@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab 2</string>
+    <string name="app_name">Lab 3</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="greeting">Take a Geography Quiz</string>
@@ -24,4 +24,5 @@
     <string name="done">Submit</string>
     <string name="restart_button">Restart</string>
     <string name="complete_text">You finished the quiz! How\'d you do?</string>
+    <string name="question_page">Questions Page</string>
 </resources>

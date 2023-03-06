@@ -1,4 +1,4 @@
-package com.cse3200.lab2
+package com.cse3200.lab3
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.cse3200.lab2.databinding.FragmentDonePageBinding
+import com.cse3200.lab3.databinding.FragmentSplashPageBinding
 
-class DoneFragment : Fragment(){
-    private var _binding: FragmentDonePageBinding? = null
+class SplashPageFragment : Fragment() {
+
+    private var _binding: FragmentSplashPageBinding? = null
 
     private val binding get() = _binding!!
 
@@ -18,7 +19,7 @@ class DoneFragment : Fragment(){
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentDonePageBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentSplashPageBinding.inflate(layoutInflater, container, false)
 
         return binding.root
     }
@@ -26,8 +27,13 @@ class DoneFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.restartButton.setOnClickListener {
-            val action = DoneFragmentDirections.restart()
+        binding.launchButton.setOnClickListener {
+            val action = SplashPageFragmentDirections.start()
+            findNavController().navigate(action)
+        }
+
+        binding.questionsPageButton.setOnClickListener {
+            val action = SplashPageFragmentDirections.toQuestions()
             findNavController().navigate(action)
         }
     }

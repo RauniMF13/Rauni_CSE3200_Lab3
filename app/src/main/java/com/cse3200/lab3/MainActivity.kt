@@ -1,9 +1,8 @@
-package com.cse3200.lab2
+package com.cse3200.lab3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.navigation.fragment.NavHostFragment
 
 private const val TAG = "MainActivity"
 

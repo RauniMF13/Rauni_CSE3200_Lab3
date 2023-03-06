@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.cse3200.lab2'
+    namespace 'com.cse3200.lab3'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.cse3200.lab2"
+        applicationId "com.cse3200.lab3"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -47,6 +47,8 @@ dependencies {
     implementation 'androidx.fragment:fragment-ktx:1.5.5'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

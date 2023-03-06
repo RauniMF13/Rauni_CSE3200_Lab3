@@ -1,4 +1,4 @@
-package com.cse3200.lab2
+package com.cse3200.lab3
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.cse3200.lab2.databinding.FragmentSplashPageBinding
+import com.cse3200.lab3.databinding.FragmentDonePageBinding
 
-class SplashPageFragment : Fragment() {
-
-    private var _binding: FragmentSplashPageBinding? = null
+class DoneFragment : Fragment(){
+    private var _binding: FragmentDonePageBinding? = null
 
     private val binding get() = _binding!!
 
@@ -19,7 +18,7 @@ class SplashPageFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSplashPageBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentDonePageBinding.inflate(layoutInflater, container, false)
 
         return binding.root
     }
@@ -27,8 +26,8 @@ class SplashPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.launchButton.setOnClickListener {
-            val action = SplashPageFragmentDirections.start()
+        binding.restartButton.setOnClickListener {
+            val action = DoneFragmentDirections.restart()
             findNavController().navigate(action)
         }
     }

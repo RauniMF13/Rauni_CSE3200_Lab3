@@ -6,7 +6,7 @@
     app:startDestination="@id/splashPageFragment">
     <fragment
         android:id="@+id/doneFragment"
-        android:name="com.cse3200.lab2.DoneFragment"
+        android:name="com.cse3200.lab3.DoneFragment"
         android:label="DoneFragment"
         tools:layout="@layout/fragment_done_page">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.cse3200.lab2.QuizFragment"
+        android:name="com.cse3200.lab3.QuizFragment"
         android:label="QuizFragment"
         tools:layout="@layout/fragment_quiz">
         <action
@@ -24,11 +24,18 @@
     </fragment>
     <fragment
         android:id="@+id/splashPageFragment"
-        android:name="com.cse3200.lab2.SplashPageFragment"
+        android:name="com.cse3200.lab3.SplashPageFragment"
         android:label="fragment_splash_page"
         tools:layout="@layout/fragment_splash_page" >
         <action
             android:id="@+id/start"
             app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/toQuestions"
+            app:destination="@id/questionsPageFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/questionsPageFragment"
+        android:name="com.cse3200.lab3.QuestionsPageFragment"
+        android:label="QuestionsPageFragment" />
 </navigation>
